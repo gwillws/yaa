@@ -1,0 +1,33 @@
+<head>
+  <title>TouchSlide test</title>
+</head>
+
+<body>
+  <div class="container">
+	<p>Below is a very simple image gallery to demonstrate how to implement touchSwipe.<br/><br/>
+        Swipe the images below left and right. Swipe up and down will scroll the page. Uses HTML5
+        CSS to animate.</p>
+    <br/>
+	{{>slideArea}}
+    
+	<button class="add">Clickity</button>
+  </div>
+</body>
+
+<template name="slideArea">
+	<div id="content">
+        <div id="imgs">
+			<img src="https://lh6.googleusercontent.com/_D9-nzLCi9qU/TNQ2gdP8JYI/AAAAAAAADtI/NU2WBbaXpgU/s500/twick_pool_stairsAndChanginRoom~.jpg"/>
+            <img src="https://lh4.googleusercontent.com/_D9-nzLCi9qU/TNQ2hYNqQEI/AAAAAAAADtI/TcqCdc6N26A/s500/twick_pool_stairs~.jpg"/>
+			<img src="https://lh4.googleusercontent.com/_D9-nzLCi9qU/TNQ2hYNqQEI/AAAAAAAADtI/TcqCdc6N26A/s500/twick_pool_stairs~.jpg"/>
+            <img src="https://lh6.googleusercontent.com/_D9-nzLCi9qU/TNQ2gdP8JYI/AAAAAAAADtI/NU2WBbaXpgU/s500/twick_pool_stairsAndChanginRoom~.jpg"/>
+            <img src="https://lh6.googleusercontent.com/_D9-nzLCi9qU/TNQ2gdP8JYI/AAAAAAAADtI/NU2WBbaXpgU/s500/twick_pool_stairsAndChanginRoom~.jpg"/>
+			<img src="https://lh6.googleusercontent.com/_D9-nzLCi9qU/TNQ2gdP8JYI/AAAAAAAADtI/NU2WBbaXpgU/s500/twick_pool_stairsAndChanginRoom~.jpg"/>
+            <img src="http://www.picturesplaza.com/static/images/images_qtbn_ANd9GcQ4a4LD3-Z5uSpifMJcw7VKJOC0BImQlVrWPFLOBlf04hP1onsbCQ.jpg"/>
+        <!--
+			{{#each pics}}
+				<img src="https://lh4.googleusercontent.com/_D9-nzLCi9qU/TNQ2UWpqLgI/AAAAAAAADtI/-OG4z6RxHwA/s500/twick_pool_hall~.jpg" />
+			{{/each}}-->
+		</div>
+	</div>
+</template>

@@ -1,0 +1,23 @@
+#content {
+	height: 340px;
+	width: 500px;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid black;
+}
+
+#imgs {
+	float: left;
+	display: inline;
+	padding: 0;
+	margin: 0;
+	width: 3500px;
+
+	transition-property: transform;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+
+	/*apply a transform to kick in the hardware acceleration.  Without this, the first
+	time we add the transform you get odd rendering of the divs (half missing) */
+	transform: translate(0, 0);
+}
